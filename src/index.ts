@@ -410,7 +410,7 @@ class AdsPowerLocalAPI {
          * @returns A promise resolving to the response data indicating success or failure.
          */
         clearAllCache: (): Promise<any> => {
-            return this._sendRequest(`${this.basePath}/api/v1/user/delete-cache`, 'POST');
+            return this._sendRequest(`${this.basePath}user/delete-cache`, 'POST');
         },
     };
 
