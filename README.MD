@@ -84,7 +84,3 @@ api.Profiles.list({ page: 1, page_size: 10 })
 
 - `Extensions.getCategoryList(page?: number, pageSize?: number): Promise<any>` - Retrieves extension categories.
 
-## License
-
-This project is licensed under the MIT License.
-
