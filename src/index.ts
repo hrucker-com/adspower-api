@@ -1,7 +1,7 @@
 namespace AdsPowerInterface {
     export interface user_proxy_config {
         /** Proxy provider or type */
-        proxy_soft: 'brightdata' | 'brightauto' | 'oxylabsauto' | '922S5auto' | 'ipideaauto' | 'ipfoxyauto' | '922S5auth' | 'kookauto' | 'ssh' | 'other' | 'noproxy';
+        proxy_soft: 'brightdata' | 'brightauto' | 'oxylabsauto' | '922S5auto' | 'ipideaauto' | 'ipfoxyauto' | '922S5auth' | 'kookauto' | 'ssh' | 'other' | 'no_proxy';
         /** Optional. The type of proxy ('http', 'https', 'socks5'). */
         proxy_type?: 'http' | 'https' | 'socks5';
         /** Optional. The proxy server address. */
