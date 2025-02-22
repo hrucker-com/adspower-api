@@ -1,8 +1,8 @@
-# AdsPowerLocalAPI
+# adspower-api
 
 ## Overview
 
-AdsPowerLocalAPI is a TypeScript/JavaScript module for interacting with the AdsPower Local API. It allows you to manage browser profiles, groups, and extensions programmatically.
+adspower-api is a TypeScript/JavaScript module for interacting with the AdsPower Local API. It allows you to manage browser profiles, groups, and extensions programmatically.
 
 ## Installation
 
