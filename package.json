@@ -4,7 +4,7 @@
   "description": "A Node.js/TypeScript wrapper for AdsPower API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "build": "tsc",
     "test": "echo \"No tests specified\" && exit 0"

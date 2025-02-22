@@ -9,19 +9,13 @@ adspower-api is a TypeScript/JavaScript module for interacting with the AdsPower
 To use this module, include it in your project:
 
 ```sh
-npm install --save ads-power-local-api
-```
-
-or
-
-```sh
-yarn add ads-power-local-api
+npm install --save adspower-api
 ```
 
 ## Usage
 
 ```ts
-import AdsPowerLocalAPI from "ads-power-local-api";
+import AdsPowerLocalAPI from "adspower-api";
 
 const api = new AdsPowerLocalAPI(50325); // Default port is 50325
 
@@ -83,4 +77,3 @@ api.Profiles.list({ page: 1, page_size: 10 })
 ### Extensions Management
 
 - `Extensions.getCategoryList(page?: number, pageSize?: number): Promise<any>` - Retrieves extension categories.
-
