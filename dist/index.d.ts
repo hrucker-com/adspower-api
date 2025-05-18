@@ -1,7 +1,7 @@
 declare namespace AdsPowerInterface {
     interface user_proxy_config {
         /** Proxy provider or type */
-        proxy_soft: 'brightdata' | 'brightauto' | 'oxylabsauto' | '922S5auto' | 'ipideaauto' | 'ipfoxyauto' | '922S5auth' | 'kookauto' | 'ssh' | 'other' | 'noproxy';
+        proxy_soft: 'brightdata' | 'brightauto' | 'oxylabsauto' | '922S5auto' | 'ipideaauto' | 'ipfoxyauto' | '922S5auth' | 'kookauto' | 'ssh' | 'other' | 'no_proxy';
         /** Optional. The type of proxy ('http', 'https', 'socks5'). */
         proxy_type?: 'http' | 'https' | 'socks5';
         /** Optional. The proxy server address. */
@@ -181,6 +181,11 @@ declare class AdsPowerLocalAPI {
          * @returns {Promise<any>} The API response.
          */
         status: (identifier: string | number) => Promise<any>;
+        /**
+         * Queries all open browsers on the current device
+         * @returns {Promise<any>} The API response.
+         */
+        active: () => Promise<any>;
         /**
          * Creates a new browser profile with the specified configuration.
          * @param profileData - An object containing the profile configuration.

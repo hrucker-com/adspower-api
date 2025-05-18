@@ -61,6 +61,13 @@ class AdsPowerLocalAPI {
                 return this._sendRequest(`${this.basePath}browser/active`, 'GET', { [paramType]: identifier });
             },
             /**
+             * Queries all open browsers on the current device
+             * @returns {Promise<any>} The API response.
+             */
+            active: () => {
+                return this._sendRequest(`${this.basePath}browser/local-active`, 'GET');
+            },
+            /**
              * Creates a new browser profile with the specified configuration.
              * @param profileData - An object containing the profile configuration.
              * @param profileData.name - Optional. The name of the profile, up to 100 characters.
